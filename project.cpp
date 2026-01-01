@@ -17,6 +17,18 @@ int main() {
     }
 
     cout << "\nTe ardhurat totale: " << total_ardhura << endl;
+    for(int i = 0; i < n; i++) {
+    cout << "Shkruaj te ardhuren " << i+1 << ": ";
+    cin >> te_ardhura[i];
+
+    if(te_ardhura[i] < 0) {
+        cout << "Vlera nuk mund te jete negative. Vendoset 0.\n";
+        te_ardhura[i] = 0;
+    }
+
+    total_ardhura += te_ardhura[i];
+}
+
 
     return 0;
 }
