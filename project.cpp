@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+    double te_ardhura[20];
+    double total_ardhura = 0;
+
+    cout << "Sa burime te ardhurash keni? ";
+    cin >> n;
+
+    for(int i = 0; i < n; i++) {
+        cout << "Shkruaj te ardhuren " << i+1 << ": ";
+        cin >> te_ardhura[i];
+        total_ardhura += te_ardhura[i];
+    }
+
+    cout << "\nTe ardhurat totale: " << total_ardhura << endl;
+
+    return 0;
+}
