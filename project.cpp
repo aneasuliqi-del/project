@@ -28,7 +28,20 @@ int main() {
 
     total_ardhura += te_ardhura[i];
 }
+    int m;
+    double shpenzime[20];
+    double total_shpenzime = 0;
 
+    cout << "\nSa shpenzime mujore keni? ";
+    cin >> m;
+
+    for (int i = 0; i < m; i++) {
+        cout << "Shkruaj shpenzimin " << i + 1 << ": ";
+        cin >> shpenzime[i];
+        total_shpenzime += shpenzime[i];
+    }
+
+    cout << "Shpenzimet totale: " << total_shpenzime << endl;
 
     return 0;
 }
