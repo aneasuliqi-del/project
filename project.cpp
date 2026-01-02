@@ -20,6 +20,7 @@ int main() {
     }
 
     total_ardhura += te_ardhura[i];
+        cout << "Te ardhurat totale: "<< total_ardhura << endl;
 }
     int m;
     double shpenzime[20];
