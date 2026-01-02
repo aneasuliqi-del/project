@@ -14,5 +14,10 @@ Kjo pjesë e projektit lejon përdoruesin të:
 - Llogarisë dhe shfaqë shpenzimet totale
 
  ## Pjesa 3: LLogaritja e perqindjes se shpenzimeve dhe kursimeve
+Ky program llogarit:
+- Llogarit bilancin
+- Perqindjen e shpenzimeve
+- Perqindjen e kursimeve
+
 
 
