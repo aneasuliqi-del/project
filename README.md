@@ -21,5 +21,11 @@ Ky program llogarit:
 - Perqindjen e shpenzimeve
 - Perqindjen e kursimeve
 
+  ## Pjesa 4: Analiza e financave
+  -analizon zakonet e shpenzimit
+  -Optimizimi i Buxhetit Mujor
+  -Vlerësimi i Performancës Financiare
+  -Monitorimi dhe Alarmimi i Shpenzimeve
+
 
 
