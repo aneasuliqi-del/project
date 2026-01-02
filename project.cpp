@@ -11,13 +11,6 @@ int main() {
     cin >> n;
 
     for(int i = 0; i < n; i++) {
-        cout << "Shkruaj te ardhuren " << i+1 << ": ";
-        cin >> te_ardhura[i];
-        total_ardhura += te_ardhura[i];
-    }
-
-    cout << "\nTe ardhurat totale: " << total_ardhura << endl;
-    for(int i = 0; i < n; i++) {
     cout << "Shkruaj te ardhuren " << i+1 << ": ";
     cin >> te_ardhura[i];
 
