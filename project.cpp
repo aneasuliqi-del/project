@@ -28,7 +28,7 @@ int main() {
     cout << "\nSa shpenzime mujore keni? ";
     cin >> m;
 
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < m; ++i) {
         cout << "Shkruaj shpenzimin " << i + 1 << ": ";
         cin >> shpenzime[i];
         total_shpenzime += shpenzime[i];
