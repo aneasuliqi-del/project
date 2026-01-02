@@ -2,10 +2,11 @@
 using namespace std;
 
 int main() {
+    const int MAX = 20;
 
-    int n;
-    double te_ardhura[20];
-    double total_ardhura = 0;
+    int n=0;
+    double te_ardhura[MAX];
+    double total_ardhura = 0.0;
 
     cout << "Sa burime te ardhurash keni? ";
     cin >> n;
