@@ -22,6 +22,7 @@ Ky program llogarit:
 - Perqindjen e kursimeve
 
   ## Pjesa 4: Analiza e financave
+  Ky program ka per qellim:
   -analizon zakonet e shpenzimit
   -Optimizimi i Buxhetit Mujor
   -Vlerësimi i Performancës Financiare
