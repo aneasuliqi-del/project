@@ -1,5 +1,3 @@
-
-
 # project
 ## Pjesa 1:Menaxhimi i Të Ardhurave
 - Futja e burimeve të të ardhurave
