@@ -32,9 +32,13 @@ int main() {
         cout << "Shkruaj shpenzimin " << i + 1 << ": ";
         cin >> shpenzime[i];
         total_shpenzime += shpenzime[i];
+
+        cout << " Shpenzimet ";
+
     }
 
     cout << "Shpenzimet totale: " << total_shpenzime << endl;
+    cout << " Shpenzimet mujore";
 
     return 0;
 }
