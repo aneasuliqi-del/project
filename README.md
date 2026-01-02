@@ -13,3 +13,6 @@ Kjo pjesë e projektit lejon përdoruesin të:
 - Futë çdo shpenzim një nga një
 - Llogarisë dhe shfaqë shpenzimet totale
 
+ ## Pjesa 3: LLogaritja e perqindjes se shpenzimeve dhe kursimeve
+
+
