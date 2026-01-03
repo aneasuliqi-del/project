@@ -73,13 +73,13 @@ int main() {
 
    double bilanci = permbledhje.bilanci;
 if(bilanci > 0) {
-        cout << "\nStatusi: Keni kursime pozitive 👍" << endl;
+        cout << "\nStatusi: Keni kursime pozitive " << endl;
     }
     else if(bilanci == 0) {
         cout << "Statusi: Buxhet i balancuar." << endl;
     }
     else {
-        cout << "Statusi: Shpenzime me te larta se te ardhurat ⚠️" << endl;
+        cout << "Statusi: Shpenzime me te larta se te ardhurat " << endl;
     }
 
     return 0;
