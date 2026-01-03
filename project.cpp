@@ -71,91 +71,18 @@ int main() {
     cout << "Përqindja e shpenzimeve: " << permbledhje.perqindje_shpenzime << " % " << endl;
     cout << "Përqindja e kursimeve: " << permbledhje.perqindje_kursime << " % " << endl; 
 
-    return 0;
-}
-void analizaFinanciare(PermbledhjaMujore p) {
-    cout << "\n=== ANALIZA FINANCIARE ===\n";
-
-    if(p.perqindje_shpenzime > 80)
-        cout << "⚠ Po shpenzon shume! Mundohu te kursesh me shume.\n";
-    else if(p.perqindje_shpenzime >= 50)
-        cout << "ℹ Shpenzimet jane ne nivel mesatar.\n";
-    else
-        cout << "✅ Shume mire! Ke kontroll te mire mbi financat.\n";
-}
-double llogaritTotalin(double arr[], int n) {
-    double total = 0;
-    for(int i = 0; i < n; i++)
-        total += arr[i];
-    return total;
-}
-
-void futShpenzimet(double shpenzime[], int &m) {
-    cout << "\nSa shpenzime mujore keni? ";
-    cin >> m;
-    if(m > 20) m = 20;
-
-    for(int i = 0; i < m; i++) {
-        cout << "Shkruaj shpenzimin " << i+1 << ": ";
-        cin >> shpenzime[i];
-        if(shpenzime[i] < 0) shpenzime[i] = 0;
+   double bilanci = permbledhje.bilanci;
+if(bilanci > 0) {
+        cout << "\nStatusi: Keni kursime pozitive 👍" << endl;
     }
-}
-
-PermbledhjaMujore llogaritPermbledhja(double total_ardhura, double total_shpenzime) {
-    PermbledhjaMujore p;
-    p.bilanci = total_ardhura - total_shpenzime;
-
-    if(total_ardhura > 0) {
-        p.perqindje_shpenzime = (total_shpenzime / total_ardhura) * 100;
-        p.perqindje_kursime = (p.bilanci / total_ardhura) * 100;
-    } else {
-        p.perqindje_shpenzime = 0;
-        p.perqindje_kursime = 0;
+    else if(bilanci == 0) {
+        cout << "Statusi: Buxhet i balancuar." << endl;
     }
-    return p;
-}
-
-void analizaFinanciare(PermbledhjaMujore p) {
-    cout << "\n=== ANALIZA FINANCIARE ===\n";
-    if(p.perqindje_shpenzime > 80)
-        cout << "⚠ Po shpenzon shume! Mundohu te kursesh.\n";
-    else if(p.perqindje_shpenzime >= 50)
-        cout << "ℹ Shpenzime mesatare.\n";
-    else
-        cout << "✅ Kontroll shume i mire i financave!\n";
-}
-
-int main() {
-    double te_ardhura[20], shpenzime[20];
-    int n, m;
-
-    cout << "Sa burime te ardhurash keni? ";
-    cin >> n;
-    if(n > 20) n = 20;
-
-    for(int i = 0; i < n; i++) {
-        cout << "Shkruaj te ardhuren " << i+1 << ": ";
-        cin >> te_ardhura[i];
-        if(te_ardhura[i] < 0) te_ardhura[i] = 0;
+    else {
+        cout << "Statusi: Shpenzime me te larta se te ardhurat ⚠️" << endl;
     }
-
-    futShpenzimet(shpenzime, m);
-
-    double total_ardhura = llogaritTotalin(te_ardhura, n);
-    double total_shpenzime = llogaritTotalin(shpenzime, m);
-
-    PermbledhjaMujore p = llogaritPermbledhja(total_ardhura, total_shpenzime);
-
-    cout << "\n=== RAPORTI MUJOR ===\n";
-    cout << "Te ardhurat totale: " << total_ardhura << endl;
-    cout << "Shpenzimet totale: " << total_shpenzime << endl;
-    cout << "Bilanci: " << p.bilanci << endl;
-    cout << "Shpenzimet (%): " << p.perqindje_shpenzime << "%\n";
-    cout << "Kursimet (%): " << p.perqindje_kursime << "%\n";
-
-    analizaFinanciare(p);
 
     return 0;
 }
+
 
